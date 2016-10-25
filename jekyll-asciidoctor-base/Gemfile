@@ -62,7 +62,6 @@ gem 'guard-jekyll'
 # https://rubygems.org/gems/jekyll-mermaid/versions/1.0.0
 gem 'jekyll-mermaid', '~> 1.0'
 
-
 # https://github.com/awood/hawkins
 #group :jekyll_plugins do
 #  gem 'hawkins'
@@ -72,3 +71,6 @@ gem 'jekyll-mermaid', '~> 1.0'
 gem 'jekyll-livereload'
 
 gem 'jekyll-pdf'
+
+# https://github.com/jordansissel/fpm
+gem 'fpm'

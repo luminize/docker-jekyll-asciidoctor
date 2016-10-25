@@ -9,6 +9,7 @@ RUN apt-get -y update && apt-get install -y \
     apt-get install -y \
     asciinema \
     debconf \
+    gcc \
     git \
     gnuplot \
     graphviz \
@@ -19,6 +20,7 @@ RUN apt-get -y update && apt-get install -y \
     libprotobuf-dev \
     libyaml-dev \
     linkchecker \
+    make \
     mscgen \
     nodejs \
     openjdk-8-jdk \
@@ -30,11 +32,13 @@ RUN apt-get -y update && apt-get install -y \
     python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose \
     python-pil \
     python-protobuf \
+    python-pygooglechart \
     python-setuptools \
     qt5-default \
     libqt5core5a \
     qt5-qmake \
     rsync \
+    ruby-dev \
     w3c-linkchecker && \
     locale-gen en_US.UTF-8 && \
     dpkg-reconfigure locales && \
@@ -43,6 +47,9 @@ RUN apt-get -y update && apt-get install -y \
     pip install prettyplotlib && \
     pip install shaape && \
     pip install python-frontmatter && \
+    pip install blockdiagcontrib-octicons && \
+    pip install blockdiagcontrib-cisco && \
+    pip install blockdiagcontrib-class && \
     npm install -g mermaid  && \
     npm install -g wavedrom-cli  && \
     gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 && \
